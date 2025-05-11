@@ -187,9 +187,10 @@ if __name__ == "__main__":
 ### TSP100
 ### FJSP3jobs
 
+![Fs5 (2)](https://github.com/user-attachments/assets/17ee5d15-029c-401b-9c22-8b816b8514fb)
 
-<img src="URL1?raw=true" alt="Fs1" width="300" /> 
-<img src="URL2?raw=true" alt="Fs5" width="300" />
+![Fs1 (2)](https://github.com/user-attachments/assets/bd689c3f-6f3c-4144-bee2-d2d766c793be)
+
 
 ### FJSP10jobs
 
