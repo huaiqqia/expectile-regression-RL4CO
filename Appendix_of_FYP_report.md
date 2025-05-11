@@ -180,6 +180,33 @@ if __name__ == "__main__":
 
 # For Ch5 Conclusion, limitations, progress and future
 ## Wandb screenshot
+###TSP5
+###TSP20
+###TSP100
+###FJSP3jobs
+
+![Fs1 (2)](https://github.com/user-attachments/assets/b71a2b81-8409-4497-8f96-437dae995b31)
+
+
+###FJSP10jobs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
