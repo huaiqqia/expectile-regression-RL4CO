@@ -10,9 +10,19 @@
 ## Neural network
 
 
+
+
+
 # For Ch4 Experiment and results
 
 ## Hyperparameters set
+
+
+
+
+
+
+
 
 ## train.py (for TSP tau experiments)
 ```python
@@ -98,6 +108,7 @@ def main():
     
 if __name__ == "__main__":
     main()
+```
 
 
 ## tsp5_bruteforce.py
