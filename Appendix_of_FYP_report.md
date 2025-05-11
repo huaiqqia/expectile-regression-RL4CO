@@ -179,16 +179,19 @@ if __name__ == "__main__":
 
 
 # For Ch5 Conclusion, limitations, progress and future
+
 ## Wandb screenshot
-###TSP5
-###TSP20
-###TSP100
-###FJSP3jobs
 
-![Fs1 (2)](https://github.com/user-attachments/assets/b71a2b81-8409-4497-8f96-437dae995b31)
+### TSP5
+### TSP20
+### TSP100
+### FJSP3jobs
+
+![Fs1 (2)](https://github.com/user-attachments/assets/b71a2b81-8409-4497-8f96-437dae995b31?raw=true" alt="Fs1 (2)" width="300"/)
+![Fs5 (2)](https://github.com/user-attachments/assets/d10834dd-db5d-46bf-b491-f6d6cca9589e?raw=true" alt="Fs1 (2)" width="300"/)
 
 
-###FJSP10jobs
+### FJSP10jobs
 
 
 
