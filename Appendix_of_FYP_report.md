@@ -16,7 +16,16 @@
 # For Ch4 Experiment and results
 
 ## Hyperparameters set
+### TSP5
 
+
+### TSP20
+
+### TSP100
+
+### FJSP 3 jobs
+
+### FJSP 10 jobs
 
 
 
@@ -111,7 +120,7 @@ if __name__ == "__main__":
 ```
 
 
-## tsp5_bruteforce.py
+## Tsp5_bruteforce.py
 ```python
 import torch
 import itertools
