@@ -1,16 +1,18 @@
 
 # For Ch1 Introduction
-
+## Details of TSP and FJSP
 
 
 # For Ch2 Preliminaries
-
+## Figure of expectile function 
 
 # For Ch3 Methodology
 ## Neural network
 
 
 # For Ch4 Experiment and results
+
+## Hyperparameters set
 
 ## train.py (for TSP tau experiments)
 ```python
@@ -98,13 +100,69 @@ if __name__ == "__main__":
     main()
 
 
+## tsp5_bruteforce.py
+```python
+import torch
+import itertools
+from rl4co.envs import TSPEnv
+
+def brute_force_tsp(coordinates):
+    num_cities = coordinates.shape[0]
+    best_tour = None
+    best_length = float('inf')
+    
+    for tour in itertools.permutations(range(num_cities)):
+        tour = list(tour) + [tour[0]]  # 添加回起点
+        length = sum(torch.norm(coordinates[tour[i]] - coordinates[tour[i+1]], p=2) for i in range(num_cities))
+        if length < best_length:
+            best_length = length
+            best_tour = tour
+    
+    return best_tour, best_length
+
+def main_brute_force():
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    print(f"Using device: {device}")
+    
+    env = TSPEnv(generator_params=dict(num_loc=5))
+    
+    val_data_size = 100
+    total_reward = 0
+    
+    for i in range(val_data_size):
+        print(f"Processing iteration {i+1}/{val_data_size}")
+        td_init = env.reset(batch_size=[1])
+        print("TensorDict keys:", td_init.keys())
+        
+        if 'locs' in td_init:
+            coordinates = td_init['locs'][0].to(device)
+        else:
+            print("Error: Could not find 'locs' in TensorDict. Available keys:", td_init.keys())
+            return  # 终止程序，因为这是一个关键错误
+        
+        best_tour, best_length = brute_force_tsp(coordinates)
+        reward = -best_length
+        total_reward += reward
+        
+        print(f"Iteration {i+1} reward: {reward:.6f}")
+    
+    avg_reward = total_reward / val_data_size
+    print(f"Brute Force - Average val/reward: {avg_reward:.6f}")
+
+if __name__ == "__main__":
+    main_brute_force()
+```
+
 
 
 
 
 
 # For Ch5 Conclusion, limitations, progress and future
+## Wandb screenshot
 
 
+
+## Data process to the results
 
 
