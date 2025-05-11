@@ -189,7 +189,7 @@ if __name__ == "__main__":
 
 ![Fs5 (2)](https://github.com/user-attachments/assets/17ee5d15-029c-401b-9c22-8b816b8514fb)
 
-![Fs1 (2)](https://github.com/user-attachments/assets/bd689c3f-6f3c-4144-bee2-d2d766c793be)
+<img src="https://github.com/user-attachments/assets/bd689c3f-6f3c-4144-bee2-d2d766c793be" alt="Fs1 (2)" width="300"/>
 
 
 ### FJSP10jobs
