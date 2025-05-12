@@ -2,7 +2,10 @@
 # For Ch1 Introduction
 ## Details of TSP and FJSP
 ### FJSP
-FJSP (Flexible Job Shop Scheduling Problem) is an important research topic in the field of CO (Combinatorial Optimization). It is an NP-hard Problem and an extension of the classic Job Shop Scheduling Problem (JSP, the Job Shop Scheduling Problem)
+FJSP (Flexible Job Shop Scheduling Problem) is an important research topic in the field of CO (Combinatorial Optimization). It is an NP-hard Problem and an extension of the classic Job Shop Scheduling Problem (JSP, the Job Shop Scheduling Problem).
+FJSP involves two main sub-problems:
+Machine Routing: Determine on which machine each process is processed (Yazdani et al., 2010).
+Process Scheduling: Determine the processing sequence of each process on each machine (Yazdani et al., 2010).
 
 # For Ch2 Preliminaries
 ## Figure of expectile function 
