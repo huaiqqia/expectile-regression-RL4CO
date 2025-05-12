@@ -187,7 +187,22 @@ if __name__ == "__main__":
 ## Wandb screenshot
 
 ### TSP5
+
+![2025-05-10 23_43_43-rl4co_w11 Workspace – Weights   Biases](https://github.com/user-attachments/assets/ded31024-dafa-4dc1-9df9-4f1898fb5da1)
+
+
+<img src="https://github.com/user-attachments/assets/3df7b260-e770-4dfa-86c3-d8e64edf6a3f" alt="2025-05-10 23_43_57-rl4co_w11 Workspace – Weights   Biases" width="300"/>
+
+#### Supplement
+Note that TSP5 experiment only has 500 steps.
+
+
 ### TSP20
+
+![20_1944_5](https://github.com/user-attachments/assets/45f47a47-05ae-4e74-adb7-1c27b77336fb)
+
+<img src="https://github.com/user-attachments/assets/ea700e7d-9da9-476b-90a1-d9b74f83ca4c" alt="20_1944_r" width="300"/>
+
 #### Supplement interpretation
 TSP20 experiment has 1.5k steps. When at 500 steps(the same as TSP5 experiment), tau0.7 is better than tau0.9, and Later, tau0.9 overtook tau0.7. 
 tau0.9 is better in the long term. However, time was limited and the experiments were insufficient, including the number of environments and the lack of sufficient repetition of the experiments.
