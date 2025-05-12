@@ -189,6 +189,13 @@ if __name__ == "__main__":
 ### TSP5
 ### TSP20
 ### TSP100
+
+![2025-05-11 02_27_43-rl4co_w11 Workspace – Weights   Biases](https://github.com/user-attachments/assets/33a41e2c-556a-41b1-ab04-3ac353a2b414)
+
+<img src="https://github.com/user-attachments/assets/80b0795d-a1a6-45c0-87a9-5eca42893bef" alt="2025-05-11 02_27_43-rl4co_w11 Workspace – Weights & Biases" width="300"/>
+
+
+
 ### FJSP3jobs
 
 ![Fs5 (2)](https://github.com/user-attachments/assets/17ee5d15-029c-401b-9c22-8b816b8514fb)
