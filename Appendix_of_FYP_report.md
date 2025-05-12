@@ -188,6 +188,12 @@ if __name__ == "__main__":
 
 ### TSP5
 ### TSP20
+#### Supplement interpretation
+TSP20 experiment has 1.5k steps. When at 500 steps(the same as TSP5 experiment), tau0.7 is better than tau0.9, and Later, tau0.9 overtook tau0.7. 
+tau0.9 is better in the long term. However, time was limited and the experiments were insufficient, including the number of environments and the lack of sufficient repetition of the experiments.
+
+
+
 ### TSP100
 
 ![2025-05-11 02_27_43-rl4co_w11 Workspace – Weights   Biases](https://github.com/user-attachments/assets/33a41e2c-556a-41b1-ab04-3ac353a2b414)
