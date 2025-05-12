@@ -228,3 +228,83 @@ if __name__ == "__main__":
 ## Data process to the results
 
 
+Then can get results value in Table 4.2: Performance comparison,  Table 4.3: Comparison between huber baseline and existing results on TSP, Table 4.4: Results on FJSP, to use the results value to make figures after that. 
+
+```python
+
+import pandas as pd
+import numpy as np
+
+file_path = 'F_10_Explain.csv'
+
+try:
+    df = pd.read_csv(file_path)
+
+    available_columns = []
+    for col in target_columns:
+        if col in df.columns:
+            available_columns.append(col)
+        else:
+            print(f"警告: 列 '{col}' 不存在于CSV文件中")
+    
+    if not available_columns:
+        raise ValueError("没有找到任何目标列")
+    
+    column_lengths = {}
+    for col in available_columns:
+        valid_data = df[col].dropna()
+        column_lengths[col] = len(valid_data)
+        print(f"列 '{col}' 包含 {column_lengths[col]} 个有效数据点")
+    
+    min_length = min(column_lengths.values())
+    print(f"\n最短列长度: {min_length}")
+    
+
+    aligned_data = {}
+    for col in available_columns:
+        valid_data = df[col].dropna().values
+        # 只取前min_length个值
+        aligned_data[col] = valid_data[:min_length]
+    
+
+    aligned_df = pd.DataFrame(aligned_data)
+    
+    results = {}
+    
+    for col in aligned_df.columns:
+        max_value = aligned_df[col].max()
+        
+
+        if 'tau0.5' in col and 'huber' in col:
+            method_name = 'Huber'
+        elif 'tau0.5' in col:
+            method_name = 'τ=0.5'
+        elif 'tau0.7' in col:
+            method_name = 'τ=0.7'
+        elif 'tau0.9' in col:
+            method_name = 'τ=0.9'
+        else:
+            method_name = col
+        
+
+        results[method_name] = max_value
+        
+        print(f"\n{method_name}:")
+        print(f"  全局最大值: {max_value:.4f}")
+    
+    print("\n最终结果汇总:")
+    for method, reward in results.items():
+        print(f"{method}: {reward:.4f}")
+    
+    print("\n用于绘图的结果字典:")
+    print(f"tsp_results = {{'TSP5': {results}}}")
+    
+except Exception as e:
+    import traceback
+    traceback.print_exc()
+    print(f"处理文件时出错: {e}")
+
+
+```
+
+
