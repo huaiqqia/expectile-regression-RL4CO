@@ -233,7 +233,7 @@ tau0.9 is better in the long term. However, time was limited and the experiments
 
 ## Data process to the results
 
-
+This project choose the best performance as results.
 Then can get results value in Table 4.2: Performance comparison,  Table 4.3: Comparison between huber baseline and existing results on TSP, Table 4.4: Results on FJSP, to use the results value to make figures after that. 
 
 ```python
