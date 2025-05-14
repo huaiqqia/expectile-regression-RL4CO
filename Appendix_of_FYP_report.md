@@ -1211,9 +1211,11 @@ tau0.9 is better in the long term. However, time was limited and the experiments
 ### TSP100
 
 
-<img src="https://github.com/user-attachments/assets/80b0795d-a1a6-45c0-87a9-5eca42893bef" alt="2025-05-11 02_27_43-rl4co_w11 Workspace – Weights & Biases" width="300"/>
+<img src="https://github.com/user-attachments/assets/6d0d930e-168f-4359-bb5a-a1f1444739a2" alt="1958_1" width="300"/>
 
-![2025-05-11 02_27_43-rl4co_w11 Workspace – Weights   Biases](https://github.com/user-attachments/assets/33a41e2c-556a-41b1-ab04-3ac353a2b414)
+![100_1958_5](https://github.com/user-attachments/assets/512132a3-b82e-410b-ae21-631813a72884)
+
+
 
 
 
