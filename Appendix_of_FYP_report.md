@@ -35,10 +35,737 @@ FJSP involves two main sub-problems:
 ## Hyperparameters set
 ### TSP5
 
+```
+{
+  "tau": {
+    "value": 0.9
+  },
+  "gamma": {
+    "value": 0.99
+  },
+  "_wandb": {
+    "value": {
+      "m": [
+        {
+          "1": "train/loss",
+          "5": 2,
+          "6": [
+            1,
+            3
+          ],
+          "7": []
+        },
+        {
+          "1": "trainer/global_step",
+          "6": [
+            3
+          ],
+          "7": []
+        },
+        {
+          "1": "train/value_loss",
+          "5": 2,
+          "6": [
+            1,
+            3
+          ],
+          "7": []
+        },
+        {
+          "1": "epoch",
+          "5": 2,
+          "6": [
+            1,
+            3
+          ],
+          "7": []
+        },
+        {
+          "1": "val/reward",
+          "5": 2,
+          "6": [
+            1,
+            3
+          ],
+          "7": []
+        },
+        {
+          "1": "train/surrogate_loss",
+          "5": 2,
+          "6": [
+            1,
+            3
+          ],
+          "7": []
+        },
+        {
+          "1": "train/reward",
+          "5": 2,
+          "6": [
+            1,
+            3
+          ],
+          "7": []
+        },
+        {
+          "1": "train/explained_variance",
+          "5": 2,
+          "6": [
+            1,
+            3
+          ],
+          "7": []
+        },
+        {
+          "1": "train/entropy",
+          "5": 2,
+          "6": [
+            1,
+            3
+          ],
+          "7": []
+        }
+      ],
+      "t": {
+        "1": [
+          1,
+          50,
+          55,
+          105,
+          106
+        ],
+        "2": [
+          1,
+          50,
+          55,
+          105,
+          106
+        ],
+        "3": [
+          7,
+          13,
+          16,
+          23,
+          55,
+          66
+        ],
+        "4": "3.12.3",
+        "5": "0.19.1",
+        "8": [
+          5
+        ],
+        "12": "0.19.1",
+        "13": "linux-x86_64"
+      },
+      "cli_version": "0.19.1",
+      "python_version": "3.12.3"
+    }
+  },
+  "critic": {
+    "value": null
+  },
+  "metrics": {
+    "value": {
+      "train": [
+        "reward",
+        "loss",
+        "surrogate_loss",
+        "value_loss",
+        "entropy",
+        "explained variance"
+      ]
+    }
+  },
+  "data_dir": {
+    "value": "data/"
+  },
+  "optimizer": {
+    "value": "Adam"
+  },
+  "vf_lambda": {
+    "value": 0.5
+  },
+  "batch_size": {
+    "value": 128
+  },
+  "clip_range": {
+    "value": 0.2
+  },
+  "ppo_epochs": {
+    "value": 3
+  },
+  "log_on_step": {
+    "value": true
+  },
+  "lr_scheduler": {
+    "value": null
+  },
+  "max_grad_norm": {
+    "value": 0.5
+  },
+  "normalize_adv": {
+    "value": true
+  },
+  "val_data_size": {
+    "value": 100
+  },
+  "entropy_lambda": {
+    "value": 0.01
+  },
+  "test_data_size": {
+    "value": 100
+  },
+  "val_batch_size": {
+    "value": 64
+  },
+  "mini_batch_size": {
+    "value": 32
+  },
+  "test_batch_size": {
+    "value": 64
+  },
+  "train_data_size": {
+    "value": 500
+  },
+  "optimizer_kwargs": {
+    "value": {
+      "lr": 0.0003
+    }
+  },
+  "lr_scheduler_kwargs": {
+    "value": {
+      "gamma": 0.1,
+      "milestones": [
+        80,
+        95
+      ]
+    }
+  },
+  "lr_scheduler_monitor": {
+    "value": "val/reward"
+  },
+  "generate_default_data": {
+    "value": false
+  },
+  "lr_scheduler_interval": {
+    "value": "epoch"
+  },
+  "dataloader_num_workers": {
+    "value": 0
+  },
+  "shuffle_train_dataloader": {
+    "value": false
+  }
+}
+
+```
 
 ### TSP20 and TSP100
 
+
+```
+{
+  "tau": {
+    "value": 0.5
+  },
+  "gamma": {
+    "value": 0.99
+  },
+  "_wandb": {
+    "value": {
+      "m": [
+        {
+          "1": "train/explained_variance",
+          "5": 2,
+          "6": [
+            1,
+            3
+          ],
+          "7": []
+        },
+        {
+          "1": "trainer/global_step",
+          "6": [
+            3
+          ],
+          "7": []
+        },
+        {
+          "1": "epoch",
+          "5": 2,
+          "6": [
+            1,
+            3
+          ],
+          "7": []
+        },
+        {
+          "1": "train/reward",
+          "5": 2,
+          "6": [
+            1,
+            3
+          ],
+          "7": []
+        },
+        {
+          "1": "train/loss",
+          "5": 2,
+          "6": [
+            1,
+            3
+          ],
+          "7": []
+        },
+        {
+          "1": "val/reward",
+          "5": 2,
+          "6": [
+            1,
+            3
+          ],
+          "7": []
+        },
+        {
+          "1": "train/entropy",
+          "5": 2,
+          "6": [
+            1,
+            3
+          ],
+          "7": []
+        },
+        {
+          "1": "train/surrogate_loss",
+          "5": 2,
+          "6": [
+            1,
+            3
+          ],
+          "7": []
+        },
+        {
+          "1": "train/value_loss",
+          "5": 2,
+          "6": [
+            1,
+            3
+          ],
+          "7": []
+        }
+      ],
+      "t": {
+        "1": [
+          1,
+          50,
+          55,
+          105,
+          106
+        ],
+        "2": [
+          1,
+          50,
+          55,
+          105,
+          106
+        ],
+        "3": [
+          7,
+          13,
+          23,
+          55,
+          66
+        ],
+        "4": "3.12.3",
+        "5": "0.19.8",
+        "8": [
+          5
+        ],
+        "12": "0.19.8",
+        "13": "linux-x86_64"
+      },
+      "cli_version": "0.19.8",
+      "python_version": "3.12.3"
+    }
+  },
+  "critic": {
+    "value": null
+  },
+  "metrics": {
+    "value": {
+      "train": [
+        "reward",
+        "loss",
+        "surrogate_loss",
+        "value_loss",
+        "entropy",
+        "explained_variance"
+      ]
+    }
+  },
+  "data_dir": {
+    "value": "data/"
+  },
+  "optimizer": {
+    "value": "Adam"
+  },
+  "vf_lambda": {
+    "value": 0.5
+  },
+  "batch_size": {
+    "value": 128
+  },
+  "clip_range": {
+    "value": 0.2
+  },
+  "ppo_epochs": {
+    "value": 2
+  },
+  "log_on_step": {
+    "value": true
+  },
+  "lr_scheduler": {
+    "value": null
+  },
+  "max_grad_norm": {
+    "value": 0.5
+  },
+  "normalize_adv": {
+    "value": true
+  },
+  "val_data_size": {
+    "value": 100
+  },
+  "entropy_lambda": {
+    "value": 0.02
+  },
+  "test_data_size": {
+    "value": 100
+  },
+  "val_batch_size": {
+    "value": 64
+  },
+  "mini_batch_size": {
+    "value": 64
+  },
+  "test_batch_size": {
+    "value": 64
+  },
+  "train_data_size": {
+    "value": 500
+  },
+  "optimizer_kwargs": {
+    "value": {
+      "lr": 0.0001
+    }
+  },
+  "lr_scheduler_kwargs": {
+    "value": {
+      "gamma": 0.1,
+      "milestones": [
+        80,
+        95
+      ]
+    }
+  },
+  "lr_scheduler_monitor": {
+    "value": "val/reward"
+  },
+  "generate_default_data": {
+    "value": false
+  },
+  "lr_scheduler_interval": {
+    "value": "epoch"
+  },
+  "dataloader_num_workers": {
+    "value": 0
+  },
+  "critic_optimizer_kwargs": {
+    "value": {
+      "lr": 0.00001
+    }
+  },
+  "policy_optimizer_kwargs": {
+    "value": {
+      "lr": 0.0005
+    }
+  },
+  "shuffle_train_dataloader": {
+    "value": false
+  }
+}
+
+```
+
+
 ### FJSP 3 jobs
+
+```
+{
+  "tau": {
+    "value": 0.9
+  },
+  "_wandb": {
+    "value": {
+      "m": [
+        {
+          "1": "val/reward",
+          "5": 2,
+          "6": [
+            1,
+            3
+          ],
+          "7": []
+        },
+        {
+          "1": "trainer/global_step",
+          "6": [
+            3
+          ],
+          "7": []
+        },
+        {
+          "1": "train/loss",
+          "5": 2,
+          "6": [
+            1,
+            3
+          ],
+          "7": []
+        },
+        {
+          "1": "train/entropy",
+          "5": 2,
+          "6": [
+            1,
+            3
+          ],
+          "7": []
+        },
+        {
+          "1": "train/explained_variance",
+          "5": 2,
+          "6": [
+            1,
+            3
+          ],
+          "7": []
+        },
+        {
+          "1": "epoch",
+          "5": 2,
+          "6": [
+            1,
+            3
+          ],
+          "7": []
+        },
+        {
+          "1": "train/reward",
+          "5": 2,
+          "6": [
+            1,
+            3
+          ],
+          "7": []
+        },
+        {
+          "1": "train/surrogate_loss",
+          "5": 2,
+          "6": [
+            1,
+            3
+          ],
+          "7": []
+        },
+        {
+          "1": "train/value_loss",
+          "5": 2,
+          "6": [
+            1,
+            3
+          ],
+          "7": []
+        }
+      ],
+      "t": {
+        "1": [
+          1,
+          50,
+          55,
+          105,
+          106
+        ],
+        "2": [
+          1,
+          50,
+          55,
+          105,
+          106
+        ],
+        "3": [
+          7,
+          13,
+          16,
+          23,
+          55,
+          66
+        ],
+        "4": "3.12.3",
+        "5": "0.19.8",
+        "8": [
+          5
+        ],
+        "12": "0.19.8",
+        "13": "linux-x86_64"
+      },
+      "cli_version": "0.19.8",
+      "python_version": "3.12.3"
+    }
+  },
+  "metrics": {
+    "value": {
+      "train": [
+        "reward",
+        "loss",
+        "surrogate_loss",
+        "value_loss",
+        "entropy",
+        "explained_variance"
+      ]
+    }
+  },
+  "data_dir": {
+    "value": "data/"
+  },
+  "num_jobs": {
+    "value": 3
+  },
+  "optimizer": {
+    "value": "Adam"
+  },
+  "vf_lambda": {
+    "value": 0.5
+  },
+  "batch_size": {
+    "value": 128
+  },
+  "clip_range": {
+    "value": 0.2
+  },
+  "ppo_epochs": {
+    "value": 4
+  },
+  "buffer_size": {
+    "value": 10000
+  },
+  "log_on_step": {
+    "value": true
+  },
+  "lr_scheduler": {
+    "value": null
+  },
+  "num_machines": {
+    "value": 2
+  },
+  "reward_scale": {
+    "value": null
+  },
+  "max_grad_norm": {
+    "value": 0.5
+  },
+  "normalize_adv": {
+    "value": true
+  },
+  "policy_kwargs": {
+    "value": {
+      "het_emb": true,
+      "embed_dim": 64,
+      "num_encoder_layers": 2
+    }
+  },
+  "val_data_size": {
+    "value": 200
+  },
+  "entropy_lambda": {
+    "value": 0.01
+  },
+  "test_data_size": {
+    "value": 50
+  },
+  "val_batch_size": {
+    "value": 64
+  },
+  "max_ops_per_job": {
+    "value": 2
+  },
+  "min_ops_per_job": {
+    "value": 2
+  },
+  "mini_batch_size": {
+    "value": 32
+  },
+  "test_batch_size": {
+    "value": 64
+  },
+  "train_data_size": {
+    "value": 500
+  },
+  "update_timestep": {
+    "value": 1
+  },
+  "optimizer_kwargs": {
+    "value": {
+      "lr": 0.0001
+    }
+  },
+  "lr_scheduler_kwargs": {
+    "value": {
+      "gamma": 0.1,
+      "milestones": [
+        80,
+        95
+      ]
+    }
+  },
+  "max_processing_time": {
+    "value": 5
+  },
+  "min_processing_time": {
+    "value": 1
+  },
+  "lr_scheduler_monitor": {
+    "value": "val/reward"
+  },
+  "buffer_storage_device": {
+    "value": "gpu"
+  },
+  "generate_default_data": {
+    "value": false
+  },
+  "lr_scheduler_interval": {
+    "value": "epoch"
+  },
+  "dataloader_num_workers": {
+    "value": 0
+  },
+  "max_eligible_ma_per_op": {
+    "value": 1
+  },
+  "min_eligible_ma_per_op": {
+    "value": 1
+  },
+  "shuffle_train_dataloader": {
+    "value": false
+  }
+}
+
+
+```
+
+
+
+
 
 ### FJSP 10 jobs
 
@@ -455,6 +1182,8 @@ if __name__ == "__main__":
 ### TSP5
 
 <img src="https://github.com/user-attachments/assets/3df7b260-e770-4dfa-86c3-d8e64edf6a3f" alt="2025-05-10 23_43_57-rl4co_w11 Workspace – Weights   Biases" width="300"/>
+
+
 ![2025-05-10 23_43_43-rl4co_w11 Workspace – Weights   Biases](https://github.com/user-attachments/assets/ded31024-dafa-4dc1-9df9-4f1898fb5da1)
 
 
@@ -466,7 +1195,9 @@ Note that TSP5 experiment only has 500 steps.
 
 ### TSP20
 
+
 <img src="https://github.com/user-attachments/assets/ea700e7d-9da9-476b-90a1-d9b74f83ca4c" alt="20_1944_r" width="300"/>
+
 ![20_1944_5](https://github.com/user-attachments/assets/45f47a47-05ae-4e74-adb7-1c27b77336fb)
 
 
@@ -479,7 +1210,9 @@ tau0.9 is better in the long term. However, time was limited and the experiments
 
 ### TSP100
 
+
 <img src="https://github.com/user-attachments/assets/80b0795d-a1a6-45c0-87a9-5eca42893bef" alt="2025-05-11 02_27_43-rl4co_w11 Workspace – Weights & Biases" width="300"/>
+
 ![2025-05-11 02_27_43-rl4co_w11 Workspace – Weights   Biases](https://github.com/user-attachments/assets/33a41e2c-556a-41b1-ab04-3ac353a2b414)
 
 
@@ -487,7 +1220,9 @@ tau0.9 is better in the long term. However, time was limited and the experiments
 
 
 ### FJSP3jobs
+
 <img src="https://github.com/user-attachments/assets/bd689c3f-6f3c-4144-bee2-d2d766c793be" alt="Fs1 (2)" width="300"/>
+
 ![Fs5 (2)](https://github.com/user-attachments/assets/17ee5d15-029c-401b-9c22-8b816b8514fb)
 
 
@@ -496,6 +1231,7 @@ tau0.9 is better in the long term. However, time was limited and the experiments
 ### FJSP10jobs
 
 <img src="https://github.com/user-attachments/assets/fdfdbfc3-b280-4687-9f01-4ec2584ea794" alt="F101" width="300"/>
+
 ![F105](https://github.com/user-attachments/assets/0a210077-76fd-4005-8901-1907a67ee55d)
 
 
