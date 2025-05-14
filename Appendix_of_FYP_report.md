@@ -8,16 +8,20 @@ This project explores the application efficacy of the expectile regression funct
 ## Details of TSP and FJSP
 ### TSP
 TSP is a classic CO problem belongs to the NP-hard problem. The problem is described as : Given a series of cities and the distances between each pair of cities, find the shortest possible route to visit each city once and return to the starting city (Punnen, 2007)
-
+<img src="[https://github.com/user-attachments/assets/ea700e7d-9da9-476b-90a1-d9b74f83ca4c](https://github.com/user-attachments/assets/e841e375-dd59-49bd-86a9-56d1b3bdd5c9)" alt="TSP" width="250"/>
 ### FJSP
 
-FJSP is also a research topic in CO belongs to the NP-hard problem and an extension of the classic Job Shop Scheduling Problem (JSP, the Job Shop Scheduling Problem).
+Flexible Job Shop Problem is also a research topic in CO belongs to the NP-hard problem and an extension of the classic Job Shop Scheduling Problem (JSP https://en.wikipedia.org/wiki/Job-shop_scheduling).
 FJSP involves two main sub-problems:
 1.Machine Routing: Determine on which machine each process is processed.
 2.Process Scheduling: Determine the processing sequence of each process on each machine (Yazdani et al., 2010).
 
 # For Ch2 Preliminaries
 ## Figure of expectile function 
+
+
+
+
 
 # For Ch3 Methodology
 ## Neural network
@@ -32,9 +36,7 @@ FJSP involves two main sub-problems:
 ### TSP5
 
 
-### TSP20
-
-### TSP100
+### TSP20 and TSP100
 
 ### FJSP 3 jobs
 
@@ -236,8 +238,10 @@ tau0.9 is better in the long term. However, time was limited and the experiments
 ### FJSP10jobs
 
 
+![F105](https://github.com/user-attachments/assets/0a210077-76fd-4005-8901-1907a67ee55d)
 
 
+<img src="https://github.com/user-attachments/assets/fdfdbfc3-b280-4687-9f01-4ec2584ea794" alt="F101" width="300"/>
 
 
 
