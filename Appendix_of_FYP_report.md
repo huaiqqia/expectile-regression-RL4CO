@@ -42,56 +42,266 @@ FJSP involves two main sub-problems:
 
 ### FJSP 10 jobs
 
-# 参数表格
-
-| parameters | value |
-|------|-----|
-| batch_size | 128 |
-| buffer_size | 10,000 |
-| buffer_storage_device | "gpu" |
-| clip_range | 0.2 |
-| data_dir | "data/" |
-| dataloader_num_workers | 0 |
-| entropy_lambda | 0.01 |
-| generate_default_data | false |
-| log_on_step | true |
-| lr_scheduler | null |
-| lr_scheduler_interval | "epoch" |
-| gamma | 0.1 |
-| 0 | 80 |
-| 1 | 95 |
-| lr_scheduler_monitor | "val/reward" |
-| max_eligible_ma_per_op | 5 |
-| max_grad_norm | 0.5 |
-| max_ops_per_job | 6 |
-| max_processing_time | 20 |
-| min_eligible_ma_per_op | 1 |
-| min_ops_per_job | 4 |
-| min_processing_time | 1 |
-| mini_batch_size | 32 |
-| normalize_adv | true |
-| num_jobs | 10 |
-| num_machines | 5 |
-| optimizer | "Adam" |
-| lr | 0.0001 |
-| embed_dim | 64 |
-| het_emb | true |
-| num_encoder_layers | 2 |
-| ppo_epochs | 4 |
-| reward_scale | null |
-| shuffle_train_dataloader | false |
-| tau | 0.9 |
-| test_batch_size | 64 |
-| test_data_size | 50 |
-| train_data_size | 500 |
-| update_timestep | 1 |
-| val_batch_size | 64 |
-| val_data_size | 200 |
-| vf_lambda | 0.5 |
-
-
-
-
+```
+{
+  "tau": {
+    "value": 0.9
+  },
+  "_wandb": {
+    "value": {
+      "m": [
+        {
+          "1": "train/entropy",
+          "5": 2,
+          "6": [
+            1,
+            3
+          ],
+          "7": []
+        },
+        {
+          "1": "trainer/global_step",
+          "6": [
+            3
+          ],
+          "7": []
+        },
+        {
+          "1": "train/reward",
+          "5": 2,
+          "6": [
+            1,
+            3
+          ],
+          "7": []
+        },
+        {
+          "1": "train/surrogate_loss",
+          "5": 2,
+          "6": [
+            1,
+            3
+          ],
+          "7": []
+        },
+        {
+          "1": "train/loss",
+          "5": 2,
+          "6": [
+            1,
+            3
+          ],
+          "7": []
+        },
+        {
+          "1": "train/value_loss",
+          "5": 2,
+          "6": [
+            1,
+            3
+          ],
+          "7": []
+        },
+        {
+          "1": "train/explained_variance",
+          "5": 2,
+          "6": [
+            1,
+            3
+          ],
+          "7": []
+        },
+        {
+          "1": "val/reward",
+          "5": 2,
+          "6": [
+            1,
+            3
+          ],
+          "7": []
+        },
+        {
+          "1": "epoch",
+          "5": 2,
+          "6": [
+            1,
+            3
+          ],
+          "7": []
+        }
+      ],
+      "t": {
+        "1": [
+          1,
+          50,
+          55,
+          105,
+          106
+        ],
+        "2": [
+          1,
+          50,
+          55,
+          105,
+          106
+        ],
+        "3": [
+          7,
+          13,
+          16,
+          23,
+          55,
+          66
+        ],
+        "4": "3.12.3",
+        "5": "0.19.8",
+        "8": [
+          5
+        ],
+        "12": "0.19.8",
+        "13": "linux-x86_64"
+      },
+      "cli_version": "0.19.8",
+      "python_version": "3.12.3"
+    }
+  },
+  "metrics": {
+    "value": {
+      "train": [
+        "reward",
+        "loss",
+        "surrogate_loss",
+        "value_loss",
+        "entropy",
+        "explained_variance"
+      ]
+    }
+  },
+  "data_dir": {
+    "value": "data/"
+  },
+  "num_jobs": {
+    "value": 10
+  },
+  "optimizer": {
+    "value": "Adam"
+  },
+  "vf_lambda": {
+    "value": 0.5
+  },
+  "batch_size": {
+    "value": 128
+  },
+  "clip_range": {
+    "value": 0.2
+  },
+  "ppo_epochs": {
+    "value": 4
+  },
+  "buffer_size": {
+    "value": 10000
+  },
+  "log_on_step": {
+    "value": true
+  },
+  "lr_scheduler": {
+    "value": null
+  },
+  "num_machines": {
+    "value": 5
+  },
+  "reward_scale": {
+    "value": null
+  },
+  "max_grad_norm": {
+    "value": 0.5
+  },
+  "normalize_adv": {
+    "value": true
+  },
+  "policy_kwargs": {
+    "value": {
+      "het_emb": true,
+      "embed_dim": 64,
+      "num_encoder_layers": 2
+    }
+  },
+  "val_data_size": {
+    "value": 200
+  },
+  "entropy_lambda": {
+    "value": 0.01
+  },
+  "test_data_size": {
+    "value": 50
+  },
+  "val_batch_size": {
+    "value": 64
+  },
+  "max_ops_per_job": {
+    "value": 6
+  },
+  "min_ops_per_job": {
+    "value": 4
+  },
+  "mini_batch_size": {
+    "value": 32
+  },
+  "test_batch_size": {
+    "value": 64
+  },
+  "train_data_size": {
+    "value": 500
+  },
+  "update_timestep": {
+    "value": 1
+  },
+  "optimizer_kwargs": {
+    "value": {
+      "lr": 0.0001
+    }
+  },
+  "lr_scheduler_kwargs": {
+    "value": {
+      "gamma": 0.1,
+      "milestones": [
+        80,
+        95
+      ]
+    }
+  },
+  "max_processing_time": {
+    "value": 20
+  },
+  "min_processing_time": {
+    "value": 1
+  },
+  "lr_scheduler_monitor": {
+    "value": "val/reward"
+  },
+  "buffer_storage_device": {
+    "value": "gpu"
+  },
+  "generate_default_data": {
+    "value": false
+  },
+  "lr_scheduler_interval": {
+    "value": "epoch"
+  },
+  "dataloader_num_workers": {
+    "value": 0
+  },
+  "max_eligible_ma_per_op": {
+    "value": 5
+  },
+  "min_eligible_ma_per_op": {
+    "value": 1
+  },
+  "shuffle_train_dataloader": {
+    "value": false
+  }
+}
+```
 
 ## train.py (for TSP tau experiments)
 ```python
