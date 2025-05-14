@@ -42,6 +42,9 @@ FJSP involves two main sub-problems:
 
 ### FJSP 10 jobs
 
+# 参数表格
+
+| parameters | value |
 |------|-----|
 | batch_size | 128 |
 | buffer_size | 10,000 |
