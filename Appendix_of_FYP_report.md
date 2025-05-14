@@ -1179,7 +1179,7 @@ if __name__ == "__main__":
 
 ## Wandb screenshot
 
-### TSP5
+### Wandb TSP5
 
 <img src="https://github.com/user-attachments/assets/3df7b260-e770-4dfa-86c3-d8e64edf6a3f" alt="2025-05-10 23_43_57-rl4co_w11 Workspace – Weights   Biases" width="300"/>
 
@@ -1193,7 +1193,7 @@ if __name__ == "__main__":
 Note that TSP5 experiment only has 500 steps.
 
 
-### TSP20
+### Wandb TSP20
 
 
 <img src="https://github.com/user-attachments/assets/ea700e7d-9da9-476b-90a1-d9b74f83ca4c" alt="20_1944_r" width="300"/>
@@ -1208,10 +1208,11 @@ tau0.9 is better in the long term. However, time was limited and the experiments
 
 
 
-### TSP100
+### Wandb TSP100
 
 
-<img src="https://github.com/user-attachments/assets/41ee8f7d-e5d0-4894-9c9f-62494bace15e" alt="10019581" width="300"/>
+
+<img src="https://github.com/user-attachments/assets/762ec753-93d3-4836-99b4-a1de8ff45da8" alt="2025-05-14 20_01_20-rl4co_w11 Workspace – Weights   Biases" width="300"/>
 
 ![100_1958_5](https://github.com/user-attachments/assets/512132a3-b82e-410b-ae21-631813a72884)
 
@@ -1221,7 +1222,7 @@ tau0.9 is better in the long term. However, time was limited and the experiments
 
 
 
-### FJSP3jobs
+### Wandb FJSP 3 jobs
 
 <img src="https://github.com/user-attachments/assets/bd689c3f-6f3c-4144-bee2-d2d766c793be" alt="Fs1 (2)" width="300"/>
 
@@ -1230,7 +1231,7 @@ tau0.9 is better in the long term. However, time was limited and the experiments
 
 
 
-### FJSP10jobs
+### Wandb FJSP 10 jobs
 
 <img src="https://github.com/user-attachments/assets/fdfdbfc3-b280-4687-9f01-4ec2584ea794" alt="F101" width="300"/>
 
