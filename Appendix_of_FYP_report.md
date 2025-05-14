@@ -6,11 +6,15 @@ This project explores the application efficacy of the expectile regression funct
 
 # For Ch1 Introduction
 ## Details of TSP and FJSP
+### TSP
+TSP is a classic CO problem belongs to the NP-hard problem. The problem is described as : Given a series of cities and the distances between each pair of cities, find the shortest possible route to visit each city once and return to the starting city (Punnen, 2007)
+
 ### FJSP
-FJSP (Flexible Job Shop Scheduling Problem) is an important research topic in the field of CO (Combinatorial Optimization). It is an NP-hard Problem and an extension of the classic Job Shop Scheduling Problem (JSP, the Job Shop Scheduling Problem).
+
+FJSP is also a research topic in CO belongs to the NP-hard problem and an extension of the classic Job Shop Scheduling Problem (JSP, the Job Shop Scheduling Problem).
 FJSP involves two main sub-problems:
-Machine Routing: Determine on which machine each process is processed (Yazdani et al., 2010).
-Process Scheduling: Determine the processing sequence of each process on each machine (Yazdani et al., 2010).
+1.Machine Routing: Determine on which machine each process is processed.
+2.Process Scheduling: Determine the processing sequence of each process on each machine (Yazdani et al., 2010).
 
 # For Ch2 Preliminaries
 ## Figure of expectile function 
