@@ -8,7 +8,7 @@ This project explores the application efficacy of the expectile regression funct
 ## Details of TSP and FJSP
 ### TSP
 TSP is a classic CO problem belongs to the NP-hard problem. The problem is described as : Given a series of cities and the distances between each pair of cities, find the shortest possible route to visit each city once and return to the starting city (Punnen, 2007)
-<img src="[https://github.com/user-attachments/assets/ea700e7d-9da9-476b-90a1-d9b74f83ca4c](https://github.com/user-attachments/assets/e841e375-dd59-49bd-86a9-56d1b3bdd5c9)" alt="TSP" width="300"/>
+<img src="https://github.com/user-attachments/assets/ea700e7d-9da9-476b-90a1-d9b74f83ca4c" alt="TSP" width="300"/>
 
 
 ### FJSP
