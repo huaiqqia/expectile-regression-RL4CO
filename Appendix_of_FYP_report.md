@@ -42,7 +42,49 @@ FJSP involves two main sub-problems:
 
 ### FJSP 10 jobs
 
-
+|------|-----|
+| batch_size | 128 |
+| buffer_size | 10,000 |
+| buffer_storage_device | "gpu" |
+| clip_range | 0.2 |
+| data_dir | "data/" |
+| dataloader_num_workers | 0 |
+| entropy_lambda | 0.01 |
+| generate_default_data | false |
+| log_on_step | true |
+| lr_scheduler | null |
+| lr_scheduler_interval | "epoch" |
+| gamma | 0.1 |
+| 0 | 80 |
+| 1 | 95 |
+| lr_scheduler_monitor | "val/reward" |
+| max_eligible_ma_per_op | 5 |
+| max_grad_norm | 0.5 |
+| max_ops_per_job | 6 |
+| max_processing_time | 20 |
+| min_eligible_ma_per_op | 1 |
+| min_ops_per_job | 4 |
+| min_processing_time | 1 |
+| mini_batch_size | 32 |
+| normalize_adv | true |
+| num_jobs | 10 |
+| num_machines | 5 |
+| optimizer | "Adam" |
+| lr | 0.0001 |
+| embed_dim | 64 |
+| het_emb | true |
+| num_encoder_layers | 2 |
+| ppo_epochs | 4 |
+| reward_scale | null |
+| shuffle_train_dataloader | false |
+| tau | 0.9 |
+| test_batch_size | 64 |
+| test_data_size | 50 |
+| train_data_size | 500 |
+| update_timestep | 1 |
+| val_batch_size | 64 |
+| val_data_size | 200 |
+| vf_lambda | 0.5 |
 
 
 
@@ -199,10 +241,11 @@ if __name__ == "__main__":
 
 ### TSP5
 
+<img src="https://github.com/user-attachments/assets/3df7b260-e770-4dfa-86c3-d8e64edf6a3f" alt="2025-05-10 23_43_57-rl4co_w11 Workspace – Weights   Biases" width="300"/>
 ![2025-05-10 23_43_43-rl4co_w11 Workspace – Weights   Biases](https://github.com/user-attachments/assets/ded31024-dafa-4dc1-9df9-4f1898fb5da1)
 
 
-<img src="https://github.com/user-attachments/assets/3df7b260-e770-4dfa-86c3-d8e64edf6a3f" alt="2025-05-10 23_43_57-rl4co_w11 Workspace – Weights   Biases" width="300"/>
+
 
 #### Supplement
 Note that TSP5 experiment only has 500 steps.
@@ -210,9 +253,10 @@ Note that TSP5 experiment only has 500 steps.
 
 ### TSP20
 
+<img src="https://github.com/user-attachments/assets/ea700e7d-9da9-476b-90a1-d9b74f83ca4c" alt="20_1944_r" width="300"/>
 ![20_1944_5](https://github.com/user-attachments/assets/45f47a47-05ae-4e74-adb7-1c27b77336fb)
 
-<img src="https://github.com/user-attachments/assets/ea700e7d-9da9-476b-90a1-d9b74f83ca4c" alt="20_1944_r" width="300"/>
+
 
 #### Supplement interpretation
 TSP20 experiment has 1.5k steps. When at 500 steps(the same as TSP5 experiment), tau0.7 is better than tau0.9, and Later, tau0.9 overtook tau0.7. 
@@ -222,37 +266,24 @@ tau0.9 is better in the long term. However, time was limited and the experiments
 
 ### TSP100
 
+<img src="https://github.com/user-attachments/assets/80b0795d-a1a6-45c0-87a9-5eca42893bef" alt="2025-05-11 02_27_43-rl4co_w11 Workspace – Weights & Biases" width="300"/>
 ![2025-05-11 02_27_43-rl4co_w11 Workspace – Weights   Biases](https://github.com/user-attachments/assets/33a41e2c-556a-41b1-ab04-3ac353a2b414)
 
-<img src="https://github.com/user-attachments/assets/80b0795d-a1a6-45c0-87a9-5eca42893bef" alt="2025-05-11 02_27_43-rl4co_w11 Workspace – Weights & Biases" width="300"/>
+
 
 
 
 ### FJSP3jobs
-
+<img src="https://github.com/user-attachments/assets/bd689c3f-6f3c-4144-bee2-d2d766c793be" alt="Fs1 (2)" width="300"/>
 ![Fs5 (2)](https://github.com/user-attachments/assets/17ee5d15-029c-401b-9c22-8b816b8514fb)
 
-<img src="https://github.com/user-attachments/assets/bd689c3f-6f3c-4144-bee2-d2d766c793be" alt="Fs1 (2)" width="300"/>
+
 
 
 ### FJSP10jobs
 
-
-![F105](https://github.com/user-attachments/assets/0a210077-76fd-4005-8901-1907a67ee55d)
-
-
 <img src="https://github.com/user-attachments/assets/fdfdbfc3-b280-4687-9f01-4ec2584ea794" alt="F101" width="300"/>
-
-
-
-
-
-
-
-
-
-
-
+![F105](https://github.com/user-attachments/assets/0a210077-76fd-4005-8901-1907a67ee55d)
 
 
 
