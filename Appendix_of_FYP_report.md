@@ -23,11 +23,11 @@ FJSP involves two main sub-problems:
 # For Ch2 Preliminaries
 ## Figure of expectile function 
 
-<img src="https://github.com/user-attachments/assets/bd6400a7-db19-4083-b9d2-c52137c1efa3" alt="05" width="500"/>
+<img src="https://github.com/user-attachments/assets/bd6400a7-db19-4083-b9d2-c52137c1efa3" alt="05" width="300"/>
 
-<img src="https://github.com/user-attachments/assets/b55d45c5-12c4-4ec2-a9fe-4e1bc17fc719" alt="07" width="500"/>
+<img src="https://github.com/user-attachments/assets/b55d45c5-12c4-4ec2-a9fe-4e1bc17fc719" alt="07" width="300"/>
 
-<img src="https://github.com/user-attachments/assets/f603a024-15ca-4a1a-ada1-e768b0554618" alt="09" width="500"/>
+<img src="https://github.com/user-attachments/assets/f603a024-15ca-4a1a-ada1-e768b0554618" alt="09" width="300"/>
 
 
 
