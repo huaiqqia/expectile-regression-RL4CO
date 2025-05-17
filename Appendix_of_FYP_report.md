@@ -1138,7 +1138,7 @@ def brute_force_tsp(coordinates):
     best_length = float('inf')
     
     for tour in itertools.permutations(range(num_cities)):
-        tour = list(tour) + [tour[0]]  # 添加回起点
+        tour = list(tour) + [tour[0]]  
         length = sum(torch.norm(coordinates[tour[i]] - coordinates[tour[i+1]], p=2) for i in range(num_cities))
         if length < best_length:
             best_length = length
@@ -1164,7 +1164,7 @@ def main_brute_force():
             coordinates = td_init['locs'][0].to(device)
         else:
             print("Error: Could not find 'locs' in TensorDict. Available keys:", td_init.keys())
-            return  # 终止程序，因为这是一个关键错误
+            return  
         
         best_tour, best_length = brute_force_tsp(coordinates)
         reward = -best_length
@@ -1271,25 +1271,25 @@ try:
         if col in df.columns:
             available_columns.append(col)
         else:
-            print(f"警告: 列 '{col}' 不存在于CSV文件中")
+            print(f"Warning: The column '{col}' does not exist in the CSV file")
     
     if not available_columns:
-        raise ValueError("没有找到任何目标列")
+        raise ValueError("No target columns were found")
     
     column_lengths = {}
     for col in available_columns:
         valid_data = df[col].dropna()
         column_lengths[col] = len(valid_data)
-        print(f"列 '{col}' 包含 {column_lengths[col]} 个有效数据点")
+        print(f"column '{col}' includes {column_lengths[col]} valid data point")
     
     min_length = min(column_lengths.values())
-    print(f"\n最短列长度: {min_length}")
+    print(f"\n Shortest column length: {min_length}")
     
 
     aligned_data = {}
     for col in available_columns:
         valid_data = df[col].dropna().values
-        # 只取前min_length个值
+        # Only take the first min_length values
         aligned_data[col] = valid_data[:min_length]
     
 
@@ -1316,19 +1316,19 @@ try:
         results[method_name] = max_value
         
         print(f"\n{method_name}:")
-        print(f"  全局最大值: {max_value:.4f}")
+        print(f" Global maximum value: {max_value:.4f}")
     
-    print("\n最终结果汇总:")
+    print("\n Summary of the final results:")
     for method, reward in results.items():
         print(f"{method}: {reward:.4f}")
     
-    print("\n用于绘图的结果字典:")
+    print("\n The result dictionary used for drawing:")
     print(f"tsp_results = {{'TSP5': {results}}}")
     
 except Exception as e:
     import traceback
     traceback.print_exc()
-    print(f"处理文件时出错: {e}")
+    print(f"An error occurred while processing the file: {e}")
 
 
 ```
