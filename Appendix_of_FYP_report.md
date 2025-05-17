@@ -1205,7 +1205,10 @@ Note that TSP5 experiment only has 500 steps.
 ### Wandb TSP20
 
 
-<img src="https://github.com/user-attachments/assets/ea700e7d-9da9-476b-90a1-d9b74f83ca4c" alt="20_1944_r" width="300"/>
+
+<img src="https://github.com/user-attachments/assets/befd0693-9b55-481d-86d9-f334b6256f89" alt="tsp20A" width="300"/>
+
+
 
 ![20_1944_5](https://github.com/user-attachments/assets/45f47a47-05ae-4e74-adb7-1c27b77336fb)
 
